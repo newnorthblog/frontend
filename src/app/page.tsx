@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Page() {
@@ -7,12 +8,13 @@ export default function Page() {
 
   return (
     <>
-      <h3>Some test!</h3>
-
-      <h1>Hello, Next.js!</h1>
+      <h1>New-North Blog</h1>
 
       <Link href="/profile">
-        <button>Go to profile</button>
+        <Button variant="default">Профиль</Button>
+      </Link>
+      <Link href="/auth">
+        <Button variant="default">Войти</Button>
       </Link>
     </>
   );

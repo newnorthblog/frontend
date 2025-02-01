@@ -1,11 +1,13 @@
 import { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
+import "./globals.css";
+import { Header } from "@/components/shared/header";
 
-const inter = JetBrains_Mono({ subsets: ["latin"], weight: ["400"] });
+const inter = Roboto({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
-  title: "My Next.js Site",
-  description: "This is my Next.js site",
+  title: "New-North blog",
+  description: "New-North blog",
 };
 
 export default function RootLayout({
@@ -15,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="min-h-screen">
+          <Header />
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
