@@ -1,4 +1,5 @@
+import Profile from "./Profile";
+
 export default function Page() {
-    return <h1>Profile</h1>
+  return <Profile />;
 }
-  
