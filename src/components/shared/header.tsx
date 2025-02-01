@@ -17,7 +17,9 @@ export const Header: React.FC<Props> = ({ className }) => {
         {/* Левая часть */}
         <div className="flex items-center gap-4">
           {/* Это лого */}
-          <Notebook className="w-8 h-8 text-primary" />
+          <Link href={"/"}>
+            <Notebook className="w-8 h-8 text-primary" />
+          </Link>
           <div>
             <h1 className="text-2xl uppercase font-black">New-North</h1>
             <p className="text-sm text-gray-400 leading-3">Blog</p>
@@ -25,7 +27,7 @@ export const Header: React.FC<Props> = ({ className }) => {
         </div>
         {/* Правая часть */}
         <div className="flex items-center gap-3">
-          <Link href="/auth">
+          <Link href="/login">
             <Button variant="outline" className="flex items-center gap-3">
               <User size={16} />
               Войти

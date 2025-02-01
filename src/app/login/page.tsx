@@ -1,5 +1,5 @@
 import Login from "./Login";
 
-export default function Page() {
+export default function AuthPage() {
   return <Login />;
 }

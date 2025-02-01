@@ -13,37 +13,36 @@ html {
 }
 
 @layer base {
-  :root {
-    --foreground: 20 14.3% 4.1%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
-
-    --primary: 0 0% 0%;
-    --primary-foreground: 60 9.1% 97.8%;
-
-    --secondary: 32 100% 98%;
-    --secondary-foreground: 24 9.8% 10%;
-
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
-
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
-
-    --border: 20 5.9% 90%;
-    --input: 0 0% 90%;
-    --ring: 24.6 95% 53.1%;
-    --radius: 10px;
+    :root {
+      --foreground: 20 14.3% 4.1%;
+  
+      --card: 0 0% 100%;
+      --card-foreground: 20 14.3% 4.1%;
+  
+      --popover: 0 0% 100%;
+      --popover-foreground: 20 14.3% 4.1%;
+  
+      --primary: 0 0% 0%; /* Черный цвет (оставьте как есть) */
+      --primary-foreground: 60 9.1% 97.8%; /* Белый цвет (оставьте как есть) */
+  
+      --secondary: 240 100% 98%; /* Светло-синий */
+      --secondary-foreground: 24 9.8% 10%; /* Темный цвет текста */
+  
+      --muted: 60 4.8% 95.9%; /* Серый (оставьте как есть) */
+      --muted-foreground: 25 5.3% 44.7%; /* Серый (оставьте как есть) */
+  
+      --accent: 240 4.8% 95.9%; /* Светло-синий */
+      --accent-foreground: 24 9.8% 10%; /* Темный цвет текста */
+  
+      --destructive: 0 84.2% 60.2%; /* Красный (оставьте как есть) */
+      --destructive-foreground: 60 9.1% 97.8%; /* Белый (оставьте как есть) */
+  
+      --border: 20 5.9% 90%; /* Серый (оставьте как есть) */
+      --input: 0 0% 90%; /* Серый (оставьте как есть) */
+      --ring: 240 95% 53.1%; /* Синий (заменили оранжевый) */
+      --radius: 10px; /* Закругление (оставьте как есть) */
+    }
   }
-}
-
 * {
   font-family: var(--font-nunito), sans-serif;
 }
